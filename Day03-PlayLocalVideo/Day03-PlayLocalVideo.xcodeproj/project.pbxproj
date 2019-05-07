@@ -12,6 +12,8 @@
 		B48F94AC2281D0EB00983E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F94AA2281D0EB00983E1E /* Main.storyboard */; };
 		B48F94AE2281D0EC00983E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48F94AD2281D0EC00983E1E /* Assets.xcassets */; };
 		B48F94B12281D0EC00983E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F94AF2281D0EC00983E1E /* LaunchScreen.storyboard */; };
+		B48F94BA2281D1A400983E1E /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B48F94B92281D1A400983E1E /* emoji zone.mp4 */; };
+		B48F94BC2281D30A00983E1E /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F94BB2281D30A00983E1E /* VideoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B48F94AD2281D0EC00983E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48F94B02281D0EC00983E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B48F94B22281D0EC00983E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B48F94B92281D1A400983E1E /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
+		B48F94BB2281D30A00983E1E /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		B48F94A52281D0EB00983E1E /* Day03-PlayLocalVideo */ = {
 			isa = PBXGroup;
 			children = (
+				B48F94B82281D19000983E1E /* Movie */,
 				B48F94A62281D0EB00983E1E /* AppDelegate.swift */,
 				B48F94A82281D0EB00983E1E /* ViewController.swift */,
+				B48F94BB2281D30A00983E1E /* VideoCell.swift */,
 				B48F94AA2281D0EB00983E1E /* Main.storyboard */,
 				B48F94AD2281D0EC00983E1E /* Assets.xcassets */,
 				B48F94AF2281D0EC00983E1E /* LaunchScreen.storyboard */,
 				B48F94B22281D0EC00983E1E /* Info.plist */,
 			);
 			path = "Day03-PlayLocalVideo";
+			sourceTree = "<group>";
+		};
+		B48F94B82281D19000983E1E /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				B48F94B92281D1A400983E1E /* emoji zone.mp4 */,
+			);
+			name = Movie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48F94B12281D0EC00983E1E /* LaunchScreen.storyboard in Resources */,
+				B48F94BA2281D1A400983E1E /* emoji zone.mp4 in Resources */,
 				B48F94AE2281D0EC00983E1E /* Assets.xcassets in Resources */,
 				B48F94AC2281D0EB00983E1E /* Main.storyboard in Resources */,
 			);
@@ -137,6 +152,7 @@
 			files = (
 				B48F94A92281D0EB00983E1E /* ViewController.swift in Sources */,
 				B48F94A72281D0EB00983E1E /* AppDelegate.swift in Sources */,
+				B48F94BC2281D30A00983E1E /* VideoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

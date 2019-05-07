@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
+class ViewController: UIViewController {
 
     static let identifier = "FontCell"
     
@@ -49,10 +49,14 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         changeFontLabel.addGestureRecognizer(gesture)
     }
 
+    
+}
+
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 35
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }

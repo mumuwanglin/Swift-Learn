@@ -12,6 +12,10 @@
 		B48F94852281BB0200983E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F94832281BB0200983E1E /* Main.storyboard */; };
 		B48F94872281BB0300983E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48F94862281BB0300983E1E /* Assets.xcassets */; };
 		B48F948A2281BB0300983E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F94882281BB0300983E1E /* LaunchScreen.storyboard */; };
+		B48F94962281C13700983E1E /* MFJinHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B48F94922281C13600983E1E /* MFJinHei_Noncommercial-Regular.ttf */; };
+		B48F94972281C13700983E1E /* MFTongXin_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B48F94932281C13600983E1E /* MFTongXin_Noncommercial-Regular.ttf */; };
+		B48F94982281C13700983E1E /* MFZhiHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B48F94942281C13600983E1E /* MFZhiHei_Noncommercial-Regular.ttf */; };
+		B48F94992281C13700983E1E /* Gaspar Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B48F94952281C13700983E1E /* Gaspar Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		B48F94862281BB0300983E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48F94892281BB0300983E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B48F948B2281BB0300983E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B48F94922281C13600983E1E /* MFJinHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFJinHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		B48F94932281C13600983E1E /* MFTongXin_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFTongXin_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		B48F94942281C13600983E1E /* MFZhiHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFZhiHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		B48F94952281C13700983E1E /* Gaspar Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaspar Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 		B48F947E2281BB0200983E1E /* Day02-CustomFont */ = {
 			isa = PBXGroup;
 			children = (
+				B48F94912281C12100983E1E /* font */,
 				B48F947F2281BB0200983E1E /* AppDelegate.swift */,
 				B48F94812281BB0200983E1E /* ViewController.swift */,
 				B48F94832281BB0200983E1E /* Main.storyboard */,
@@ -62,6 +71,17 @@
 				B48F948B2281BB0300983E1E /* Info.plist */,
 			);
 			path = "Day02-CustomFont";
+			sourceTree = "<group>";
+		};
+		B48F94912281C12100983E1E /* font */ = {
+			isa = PBXGroup;
+			children = (
+				B48F94952281C13700983E1E /* Gaspar Regular.otf */,
+				B48F94922281C13600983E1E /* MFJinHei_Noncommercial-Regular.ttf */,
+				B48F94932281C13600983E1E /* MFTongXin_Noncommercial-Regular.ttf */,
+				B48F94942281C13600983E1E /* MFZhiHei_Noncommercial-Regular.ttf */,
+			);
+			name = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +142,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48F94992281C13700983E1E /* Gaspar Regular.otf in Resources */,
+				B48F94972281C13700983E1E /* MFTongXin_Noncommercial-Regular.ttf in Resources */,
+				B48F94982281C13700983E1E /* MFZhiHei_Noncommercial-Regular.ttf in Resources */,
 				B48F948A2281BB0300983E1E /* LaunchScreen.storyboard in Resources */,
+				B48F94962281C13700983E1E /* MFJinHei_Noncommercial-Regular.ttf in Resources */,
 				B48F94872281BB0300983E1E /* Assets.xcassets in Resources */,
 				B48F94852281BB0200983E1E /* Main.storyboard in Resources */,
 			);

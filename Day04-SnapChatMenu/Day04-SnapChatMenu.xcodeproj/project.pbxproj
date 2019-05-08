@@ -12,6 +12,12 @@
 		B48F94ED228314FD00983E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F94EB228314FD00983E1E /* Main.storyboard */; };
 		B48F94EF228314FE00983E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48F94EE228314FE00983E1E /* Assets.xcassets */; };
 		B48F94F2228314FE00983E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F94F0228314FE00983E1E /* LaunchScreen.storyboard */; };
+		B48F95032283173400983E1E /* LeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F95012283173400983E1E /* LeftView.swift */; };
+		B48F95042283173400983E1E /* LeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48F95022283173400983E1E /* LeftView.xib */; };
+		B48F95072283174300983E1E /* RightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F95052283174300983E1E /* RightView.swift */; };
+		B48F95082283174300983E1E /* RightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48F95062283174300983E1E /* RightView.xib */; };
+		B48F950B2283186700983E1E /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48F95092283186700983E1E /* CameraView.swift */; };
+		B48F950C2283186700983E1E /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B48F950A2283186700983E1E /* CameraView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		B48F94EE228314FE00983E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48F94F1228314FE00983E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B48F94F3228314FE00983E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B48F95012283173400983E1E /* LeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftView.swift; sourceTree = "<group>"; };
+		B48F95022283173400983E1E /* LeftView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftView.xib; sourceTree = "<group>"; };
+		B48F95052283174300983E1E /* RightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightView.swift; sourceTree = "<group>"; };
+		B48F95062283174300983E1E /* RightView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightView.xib; sourceTree = "<group>"; };
+		B48F95092283186700983E1E /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B48F950A2283186700983E1E /* CameraView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,12 @@
 				B48F94EE228314FE00983E1E /* Assets.xcassets */,
 				B48F94F0228314FE00983E1E /* LaunchScreen.storyboard */,
 				B48F94F3228314FE00983E1E /* Info.plist */,
+				B48F95012283173400983E1E /* LeftView.swift */,
+				B48F95022283173400983E1E /* LeftView.xib */,
+				B48F95052283174300983E1E /* RightView.swift */,
+				B48F95062283174300983E1E /* RightView.xib */,
+				B48F95092283186700983E1E /* CameraView.swift */,
+				B48F950A2283186700983E1E /* CameraView.xib */,
 			);
 			path = "Day04-SnapChatMenu";
 			sourceTree = "<group>";
@@ -123,8 +141,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48F94F2228314FE00983E1E /* LaunchScreen.storyboard in Resources */,
+				B48F95082283174300983E1E /* RightView.xib in Resources */,
 				B48F94EF228314FE00983E1E /* Assets.xcassets in Resources */,
+				B48F950C2283186700983E1E /* CameraView.xib in Resources */,
 				B48F94ED228314FD00983E1E /* Main.storyboard in Resources */,
+				B48F95042283173400983E1E /* LeftView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +158,9 @@
 			files = (
 				B48F94EA228314FD00983E1E /* ViewController.swift in Sources */,
 				B48F94E8228314FD00983E1E /* AppDelegate.swift in Sources */,
+				B48F95032283173400983E1E /* LeftView.swift in Sources */,
+				B48F950B2283186700983E1E /* CameraView.swift in Sources */,
+				B48F95072283174300983E1E /* RightView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2PL2ZRQK8T;
 				INFOPLIST_FILE = "Day04-SnapChatMenu/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2PL2ZRQK8T;
 				INFOPLIST_FILE = "Day04-SnapChatMenu/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

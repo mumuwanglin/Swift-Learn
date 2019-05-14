@@ -12,6 +12,7 @@
 		B48F9580228B075000983E1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F957E228B075000983E1E /* Main.storyboard */; };
 		B48F9582228B075100983E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48F9581228B075100983E1E /* Assets.xcassets */; };
 		B48F9585228B075100983E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48F9583228B075100983E1E /* LaunchScreen.storyboard */; };
+		B48F958E228B078800983E1E /* Ecstasy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B48F958D228B078800983E1E /* Ecstasy.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B48F9581228B075100983E1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48F9584228B075100983E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B48F9586228B075100983E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B48F958D228B078800983E1E /* Ecstasy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Ecstasy.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		B48F9579228B075000983E1E /* Day08-RandomColorization */ = {
 			isa = PBXGroup;
 			children = (
+				B48F958C228B077C00983E1E /* Music */,
 				B48F957A228B075000983E1E /* AppDelegate.swift */,
 				B48F957C228B075000983E1E /* ViewController.swift */,
 				B48F957E228B075000983E1E /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				B48F9586228B075100983E1E /* Info.plist */,
 			);
 			path = "Day08-RandomColorization";
+			sourceTree = "<group>";
+		};
+		B48F958C228B077C00983E1E /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				B48F958D228B078800983E1E /* Ecstasy.mp3 */,
+			);
+			name = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48F9585228B075100983E1E /* LaunchScreen.storyboard in Resources */,
+				B48F958E228B078800983E1E /* Ecstasy.mp3 in Resources */,
 				B48F9582228B075100983E1E /* Assets.xcassets in Resources */,
 				B48F9580228B075000983E1E /* Main.storyboard in Resources */,
 			);

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Day09_ImageScrollerEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve" translatesAutoresizingMaskIntoConstraints="NO" id="QXS-Ox-w1M">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0f-PX-Aq2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cn3-O5-zMu">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="348-B4-S78">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve" translatesAutoresizingMaskIntoConstraints="NO" id="9Kc-vd-7AG">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9Kc-vd-7AG" firstAttribute="leading" secondItem="348-B4-S78" secondAttribute="leading" id="KLP-g7-p1B"/>
+                                    <constraint firstItem="9Kc-vd-7AG" firstAttribute="top" secondItem="348-B4-S78" secondAttribute="top" id="RKi-ID-zg1"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Kc-vd-7AG" secondAttribute="trailing" id="X3X-1u-crJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Kc-vd-7AG" secondAttribute="bottom" id="hF2-Nd-aCs"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Mfz-f3-Ewp"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x0f-PX-Aq2" firstAttribute="height" secondItem="QXS-Ox-w1M" secondAttribute="height" id="1Cs-sM-vnO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="348-B4-S78" secondAttribute="trailing" id="BBt-gg-yv7"/>
+                            <constraint firstItem="x0f-PX-Aq2" firstAttribute="width" secondItem="QXS-Ox-w1M" secondAttribute="width" id="Hg1-W8-uGP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="348-B4-S78" secondAttribute="bottom" id="KO5-Bo-GIT"/>
+                            <constraint firstItem="QXS-Ox-w1M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KTf-xH-09L"/>
+                            <constraint firstItem="QXS-Ox-w1M" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Mhl-D7-pwe"/>
+                            <constraint firstItem="QXS-Ox-w1M" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ow2-NW-Bnh"/>
+                            <constraint firstItem="x0f-PX-Aq2" firstAttribute="centerX" secondItem="QXS-Ox-w1M" secondAttribute="centerX" id="Thv-oJ-gtA"/>
+                            <constraint firstAttribute="bottom" secondItem="QXS-Ox-w1M" secondAttribute="bottom" id="VVW-DJ-aQp"/>
+                            <constraint firstItem="348-B4-S78" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cgz-gs-2Xu"/>
+                            <constraint firstItem="x0f-PX-Aq2" firstAttribute="centerY" secondItem="QXS-Ox-w1M" secondAttribute="centerY" id="d0q-Hc-3xy"/>
+                            <constraint firstItem="348-B4-S78" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hv3-07-gjm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="9Kc-vd-7AG" id="A1H-1R-ZNK"/>
+                        <outlet property="imageViewBottomConstraint" destination="hF2-Nd-aCs" id="U2D-nz-Eri"/>
+                        <outlet property="imageViewLeadingConstraint" destination="KLP-g7-p1B" id="ZEn-kX-Iso"/>
+                        <outlet property="imageViewTopConstraint" destination="RKi-ID-zg1" id="VfJ-aN-gyu"/>
+                        <outlet property="imageViewTrailingConstraint" destination="X3X-1u-crJ" id="jqk-R5-160"/>
+                        <outlet property="scrollView" destination="348-B4-S78" id="WYa-tk-jQj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="steve" width="320" height="320"/>
+    </resources>
+</document>

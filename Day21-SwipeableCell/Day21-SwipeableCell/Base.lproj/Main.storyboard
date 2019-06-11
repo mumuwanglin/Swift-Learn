@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F8r-yt-32K">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swipeable Cell-->
+        <scene sceneID="jEc-c2-7yT">
+            <objects>
+                <tableViewController id="ikT-wZ-1yS" customClass="ViewController" customModule="Day21_SwipeableCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TGN-HT-1bL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PatternCell" rowHeight="60" id="Bjg-Vi-mdr" customClass="PatternCell" customModule="Day21_SwipeableCell" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bjg-Vi-mdr" id="Taj-4m-7qC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YjX-tU-fgb">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="59.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="pGm-uB-loV"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neon Autumn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCd-ks-qCn">
+                                            <rect key="frame" x="160" y="17.5" width="246" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="suk-YS-00F"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="YjX-tU-fgb" secondAttribute="bottom" id="2TW-Mp-Viu"/>
+                                        <constraint firstAttribute="trailing" secondItem="zCd-ks-qCn" secondAttribute="trailing" constant="8" id="M8v-vc-kLv"/>
+                                        <constraint firstItem="YjX-tU-fgb" firstAttribute="leading" secondItem="Taj-4m-7qC" secondAttribute="leading" id="Rkx-eM-HEu"/>
+                                        <constraint firstItem="YjX-tU-fgb" firstAttribute="top" secondItem="Taj-4m-7qC" secondAttribute="top" id="SoO-cj-1B3"/>
+                                        <constraint firstItem="zCd-ks-qCn" firstAttribute="leading" secondItem="YjX-tU-fgb" secondAttribute="trailing" constant="10" id="nBR-zH-YEu"/>
+                                        <constraint firstItem="zCd-ks-qCn" firstAttribute="centerY" secondItem="YjX-tU-fgb" secondAttribute="centerY" id="tqv-7D-fEf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="patternImageView" destination="YjX-tU-fgb" id="8qx-pw-98R"/>
+                                    <outlet property="patternNameLabel" destination="zCd-ks-qCn" id="tYt-1H-dM6"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ikT-wZ-1yS" id="2YH-ne-4A8"/>
+                            <outlet property="delegate" destination="ikT-wZ-1yS" id="Xfx-2j-FUd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Swipeable Cell" id="MFU-7s-iDe"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sHy-Kg-w0B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105.7971014492755" y="750"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gTK-At-Qv7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F8r-yt-32K" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dMj-MZ-41D">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ikT-wZ-1yS" kind="relationship" relationship="rootViewController" id="A1F-p2-uYK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M1E-Vj-llo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="195.6521739130435" y="750"/>
+        </scene>
+    </scenes>
+</document>

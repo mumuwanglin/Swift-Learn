@@ -52,7 +52,7 @@
                         </variation>
                     </textView>
                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4T-wk-2Re">
-                        <rect key="frame" x="20" y="20" width="20" height="24"/>
+                        <rect key="frame" x="20" y="34" width="20" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="46" id="7xt-hJ-Ofz"/>
                             <constraint firstAttribute="width" constant="20" id="LRo-iq-anZ"/>
@@ -72,7 +72,7 @@
                 <constraint firstAttribute="trailing" secondItem="NZp-Pm-T0G" secondAttribute="trailing" id="9rD-a8-4H6"/>
                 <constraint firstItem="NZp-Pm-T0G" firstAttribute="top" secondItem="p7l-gm-v87" secondAttribute="bottom" id="BKW-e4-RHF"/>
                 <constraint firstAttribute="trailing" secondItem="p7l-gm-v87" secondAttribute="trailing" id="HjI-gV-EBV"/>
-                <constraint firstItem="B4T-wk-2Re" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="Ica-sz-rWd"/>
+                <constraint firstItem="B4T-wk-2Re" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="34" id="Ica-sz-rWd"/>
                 <constraint firstItem="NZp-Pm-T0G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PdD-kk-hiK"/>
                 <constraint firstItem="p7l-gm-v87" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="So5-Fq-zpn"/>
                 <constraint firstItem="p7l-gm-v87" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rMj-cr-E5e"/>
